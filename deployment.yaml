@@ -1,3 +1,5 @@
+# Declara o estado desejado da aplicação 'landing-page' no Kubernetes, especificando a imagem a ser usada e o número de réplicas (pods).
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
