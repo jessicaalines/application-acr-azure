@@ -17,3 +17,11 @@ az acr login --name acrdevlab001eastus
 
 docker tag cursoia/land:latest acrdevlab001eastus.azurecr.io/cursoia-land:latest
 docker push acrdevlab001eastus.azurecr.io/cursoia-land:latest
+
+Criar arquivo de service.yaml e deployment.yaml
+
+az aks get-credentials --resource-group LAB001 --name aks-dev-eastus-je-001-dio-lab02
+
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl get svc landing-page
