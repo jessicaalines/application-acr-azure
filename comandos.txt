@@ -1,0 +1,19 @@
+docker build -t cursoia/land:latest .
+
+# verificando se há uma imagem
+docker images
+
+# ver o que está rodando
+docker ps
+
+# parar container
+docker stop id do container
+
+docker run -d -p 80:80 cursoia/land:latest
+
+
+az login ou az login --tenant eefbb5dd-6a7b-405d-add2-7e7e631d8681 --use-device-code
+az acr login --name acrdevlab001eastus
+
+docker tag cursoia/land:latest acrdevlab001eastus.azurecr.io/cursoia-land:latest
+docker push acrdevlab001eastus.azurecr.io/cursoia-land:latest
