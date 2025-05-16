@@ -1,5 +1,9 @@
 # Landing page com AKS e K8S
 
+<div align="center">
+    <img src="src/assets/container.png" alt="container" />
+</div>
+
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -41,12 +45,11 @@ A aplicação foi exposta no seguinte endereço IP público, provisionado pelo A
 
 `http://51.8.210.78`
 
-*(Aqui você pode inserir o print do navegador mostrando a aplicação rodando nesse IP)*
+<img src="src/assets/l_p.png" alt="landing page" />
 
 Este IP foi atribuído ao serviço Kubernetes `landing-page`, que utiliza um Azure Load Balancer para distribuir o tráfego para os pods da aplicação. O status do serviço e o IP externo podem ser verificados com o comando:
 
-```bash
-kubectl get svc landing-page
+kubectl get svc landing-page```
 
 # Autora
 
